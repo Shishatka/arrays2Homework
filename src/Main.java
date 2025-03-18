@@ -30,16 +30,12 @@ public class Main {
         for (int current : thirdSum) {
             total = total + current;
         }
-        int mean = total / 5;
+        double mean = (double) total / 5;
         System.out.println("Средняя сумма трат за месяц составила " + mean + " рублей");
 
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        char[] fullName = new char[reverseFullName.length];
-        int j = 0;
-        for (int i = reverseFullName.length-1; i >= 0; i--) {
-            fullName[j] = reverseFullName[i];
-            j++;
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i] + " ");
         }
-        System.out.println(fullName);
     }
 }
